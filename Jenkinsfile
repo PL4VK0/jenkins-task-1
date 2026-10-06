@@ -1,5 +1,5 @@
 pipeline {
-    agents any
+    agent any
     environment {
         APP_PORT = '9090'
       }
