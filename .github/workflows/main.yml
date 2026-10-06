@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Generate a token
-        id: generate-token
-        uses: actions/create-github-app-token@v2
-        with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Checks-out your repository
         uses: actions/checkout@v6
       - name: Run Jenkinsfile
